@@ -206,7 +206,7 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/keyboard": {
-        "exec": "[[ \"$(ibus engine)\" == \"libpinyin\" ]] && echo '中' || echo 'en'",
+        "exec": "[[ \"$(ibus engine)\" == *\"pinyin\" ]] && echo '中' || echo 'en'",
         "interval": "once",
         "signal": 1,
         "format": "{} &#xf11c;",
