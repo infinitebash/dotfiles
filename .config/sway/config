@@ -237,14 +237,14 @@ bindsym XF86AudioPrev exec playerctl previous
 
 default_border none
 gaps inner 10
-exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XAUTHORITY
-exec export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
 exec mullvad-vpn
 exec mako
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec blueman-applet
 exec nm-applet --indicator
 exec udiskie
+exec dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY
+exec gnome-keyring-daemon --start --components=secrets
 
 # input switching
 exec ibus-daemon --xim -d -r
