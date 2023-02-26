@@ -19,7 +19,7 @@ set $term alacritty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu wofi 
-set $wallpaper $HOME/Pictures/Wallpapers/catppuccin/minimalistic/dark-cat-rosewater.png 
+set $wallpaper $HOME/Pictures/Wallpapers/catppuccin/os/arch-rainbow-1920x1080.png
 
 ### Output configuration
 #
@@ -244,7 +244,7 @@ exec blueman-applet
 exec nm-applet --indicator
 exec udiskie
 exec dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY
-exec gnome-keyring-daemon --start --components=secrets
+exec gnome-keyring-daemon --start --components=secrets,ssh
 
 # input switching
 exec ibus-daemon --xim -d -r
