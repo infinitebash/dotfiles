@@ -1,0 +1,9 @@
+#!/bin/bash
+
+CURRENT_SETTING=$(gsettings get org.gnome.desktop.peripherals.touchpad send-events)
+
+if [ "$CURRENT_SETTING" = "'enabled'" ]; then
+  gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled
+elif [ "$CURRENT_SETTING" = "'disabled'" ]; then
+  gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled
+fi
