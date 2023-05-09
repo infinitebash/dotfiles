@@ -19,7 +19,7 @@
         "backlight",
         "custom/keyboard",
         "battery",
-        "battery#bat2",
+        "custom/power",
         "clock",
         "tray"
     ],
@@ -158,6 +158,11 @@
             ""
         ]
     },
+    "custom/power": {
+      "format": "  {}",
+      "exec": "upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep energy-rate | grep -o \"[0-9].*\"",
+      "interval": 10,
+    },
     "battery#bat2": {
         "bat": "BAT2"
     },
@@ -212,5 +217,5 @@
         "format": "{} &#xf11c;",
         "on-click": "~/.config/sway/scripts/nextkb",
         "tooltip": false
-    }
+    },
 }

@@ -90,6 +90,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mpd,
+#custom-power,
 #custom-keyboard {
     padding: 0 10px;
     color: #ffffff;
@@ -164,11 +165,11 @@ label:focus {
 }
 
 #network {
-    background-color: @pink;
+    background-color: @mauve;
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+    background-color: @red;
 }
 
 #pulseaudio {
@@ -284,4 +285,9 @@ label:focus {
 
 #custom-keyboard {
   background-color: @teal;
+}
+
+#custom-power {
+  background-color: @green;
+  color: @crust;
 }
