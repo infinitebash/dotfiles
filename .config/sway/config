@@ -19,12 +19,12 @@ set $term alacritty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu wofi 
-set $wallpaper $HOME/Pictures/Wallpapers/catppuccin/os/arch-rainbow-1920x1080.png
+set $wallpaper $HOME/Pictures/Wallpapers/catppuccin/minimalistic/unicat.png
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * background "$wallpaper" fill 
+output * background "$wallpaper" fill
 #
 # Example configuration:
 #
