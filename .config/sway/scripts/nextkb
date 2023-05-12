@@ -3,7 +3,7 @@ grabnext='false'
 next=''
 
 # Read ibus config for desired engine order
-engines=($(ibus read-config | grep engines-order | grep -oP "'([\d\w:]+)'" | grep -oP '[\d\w\n:]+'))
+engines=($(ibus read-config | grep engines-order | grep -oP "'([\w:]+)'" | grep -oP '[\w:]+'))
 for engine in $engines; do
     if [ 'true' = $grabnext ]; then
         next=$engine
