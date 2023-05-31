@@ -205,11 +205,13 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
+    background-color: @peach;
+    color: @crust;
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+    background-color: @red;
+    color: @crust;
 }
 
 #tray {
